@@ -106,7 +106,7 @@
 {
     display: none;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -170,8 +170,9 @@
 
 .btns-juego
 {
-    width: 688px;
-    height: 67px;
+    display: inline-block;
+    width: auto;
+    height: auto;
 }
 
 .btn-nuevojuego
