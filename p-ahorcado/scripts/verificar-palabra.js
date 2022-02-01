@@ -1,5 +1,5 @@
 function verificarPalabra(palabra) {
-    if(palabra.length > 8) {
+    if(palabra.length > 8 || palabra.length < 2) {
         return false;
     }
     for(var i = 0; i < palabra.length; i++) {

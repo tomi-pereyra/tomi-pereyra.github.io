@@ -42,7 +42,7 @@
 {
     display: none;
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -106,7 +106,7 @@
 {
     display: none;
     width: 100vw;
-    height: auto;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -125,7 +125,9 @@
     justify-content: space-around;
     align-items: center;
     width: 464px;
-    height: 152px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .letras
@@ -137,17 +139,23 @@
     color: #0A3871;
 }
 
+.letra
+{
+    text-align: center;
+    width: 40px;
+}
+
 .lineas
 {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     color: #0A3871;
 }
 
 .linea
 {
-    width: 80px;
+    width: 40px;
     height: 4px;
     background-color: #0A3871;
     border-radius: 8px;
@@ -194,4 +202,10 @@
     border: 1px solid #0A3871;
     border-radius: 24px;
     font-size: 16px;
+}
+
+.mensaje
+{
+    margin: 20px;
+    font-size: 24px;
 }

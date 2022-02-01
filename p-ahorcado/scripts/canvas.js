@@ -1,17 +1,9 @@
 var lienzo = document.querySelector("canvas");
 var pincel = lienzo.getContext("2d");
 
-dBase();
-dMastil();
-dTravesa();
-dSoga();
-dCabeza();
-dTronco();
-dPieDerecho();
-dPieIzquierdo();
-dPieDerecho();
-dManoDerecha();
-dManoIzquierda();
+function limpiar() {
+    pincel.clearRect(0, 0, 294, 360);
+}
 
 function dBase() {
     pincel.fillStyle = "darkblue";
