@@ -27,6 +27,11 @@
     background-color: #0A3871;
 }
 
+.btn-iniciar:hover
+{
+    cursor: pointer;
+}
+
 .btn-agregar
 {
     width: 280px;
@@ -36,6 +41,11 @@
     font-size: 16px;
     color: darkblue;
     border: 1px solid #0A3871;
+}
+
+.btn-agregar:hover
+{
+    cursor: pointer;
 }
 
 .palabra-nueva
@@ -92,6 +102,11 @@
     border: none;
 }
 
+.btn-guardar-empezar:hover
+{
+    cursor: pointer;
+}
+
 .btn-cancelar
 {
     width: 332px;
@@ -100,6 +115,11 @@
     color: #0A3871;
     border-radius: 24px;
     border: 1px solid #0A3871;
+}
+
+.btn-cancelar:hover
+{
+    cursor: pointer;
 }
 
 .juego
@@ -195,6 +215,11 @@
     font-size: 16px;
 }
 
+.btn-nuevojuego:hover
+{
+    cursor: pointer;
+}
+
 .btn-desistir
 {
     width: 332px;
@@ -202,6 +227,11 @@
     border: 1px solid #0A3871;
     border-radius: 24px;
     font-size: 16px;
+}
+
+.btn-desistir:hover
+{
+    cursor: pointer;
 }
 
 .mensaje
