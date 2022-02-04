@@ -250,15 +250,16 @@
 .mobile
 {
     display: none;
-    width: auto;
-    height: 19px;
 }
 
 @media (max-width: 800px) {
     #mobile
     {
-        display: block;
+        display: flex;
+        width: auto;
+        height: 20px;
         margin-left: -1000px;
+        
     }
 
     .mobile
