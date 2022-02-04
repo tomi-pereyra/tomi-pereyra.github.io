@@ -15,6 +15,7 @@ function iniciarJuego(){
     finJuego = false;
     ganaste = 0;
     mensaje = "";
+    letrasErrores = [];
 
     limpiar();
 
