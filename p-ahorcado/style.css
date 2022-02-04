@@ -255,6 +255,11 @@
 }
 
 @media (max-width: 800px) {
+    #mobile
+    {
+        display: block;
+        margin-left: -1000px;
+    }
 
     .mobile
     {
