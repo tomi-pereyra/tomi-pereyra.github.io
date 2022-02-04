@@ -239,3 +239,29 @@
     margin: 20px;
     font-size: 24px;
 }
+
+#mobile
+{
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+.mobile
+{
+    display: none;
+    width: auto;
+    height: 19px;
+}
+
+@media (max-width: 800px) {
+
+    .mobile
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 10px;
+        margin: 15px;
+    }
+}

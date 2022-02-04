@@ -1,4 +1,4 @@
-document.addEventListener("keyup", vTecla);
+document.addEventListener("keypress", vTecla);
 
 var errores = 0;
 var lUsadas = [];
