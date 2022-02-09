@@ -144,7 +144,8 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 464px;
+    width: 100%;
+    max-width: 464px;
     height: auto;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -206,7 +207,8 @@
 
 .btn-nuevojuego
 {
-    width: 332px;
+    width: 80%;
+    max-width: 332px;
     height: 67px;
     border: none;
     border-radius: 24px;
@@ -222,7 +224,8 @@
 
 .btn-desistir
 {
-    width: 332px;
+    width: 80%;
+    max-width: 332px;
     height: 67px;
     border: 1px solid #0A3871;
     border-radius: 24px;
