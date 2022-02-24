@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+}
+
+header {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .header-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.header-start h3, span {
+    margin: 20px 16px;
+}
+
+.header-start h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-style: normal;
+}
+
+.header-start span {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-style: normal;
+}
+
+header .header-presentation {
+    margin-bottom: 16px;
+}
+
+header .header-presentation h1{
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+header .header-presentation p {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: 16px;
+}
+
+header .header-presentation .referencias-redes {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header .header-presentation .referencias-redes--red {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+header .header-presentation .referencias-redes--red a {
+    text-decoration: none;
+    color: #464646;
+}
+
+header .header-presentation .referencias-redes--red .flecha {
+    padding: 0;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.sobremi {
+    padding: 16px;
+}
+
+.sobremi h2 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+
+.sobremi p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 16px;
+}
+
+.sobremi img {
+    width: 140px;
+    height: 52px;
+}
+
