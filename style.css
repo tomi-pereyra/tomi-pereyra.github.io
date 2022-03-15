@@ -1,0 +1,357 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Raleway', sans-serif;
+    color: #464646;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+header {
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .header-start {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+}
+
+.header-start h3, span {
+    margin: 20px 16px;
+}
+
+.header-start h3 {
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    font-style: normal;
+}
+
+.header-start span {
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-style: normal;
+}
+
+header .header-presentation {
+    margin-bottom: 16px;
+}
+
+header .header-presentation h1{
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+header .header-presentation p {
+    font-weight: normal;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: 16px;
+}
+
+header .header-presentation .referencias-redes {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header .header-presentation .referencias-redes--red {
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+header .header-presentation .referencias-redes--red a {
+    text-decoration: none;
+    color: #464646;
+}
+
+header .header-presentation .referencias-redes--red .flecha {
+    padding: 0;
+    margin: 0;
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}
+
+.sobremi {
+    width: 90%;
+    margin: 0 auto;
+    padding: 16px;
+    background-color: #EAF2FD;
+}
+
+.sobremi h2 {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 16px;
+}
+
+.sobremi p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 16px;
+}
+
+.sobremi img {
+    width: 140px;
+    height: 52px;
+}
+
+.skills-container , .hobbies-container{
+    text-align: center;
+}
+
+.skills-container h3 , .hobbies-container h3{
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    text-align: center;    
+    margin-top: 16px;
+}
+
+.skills-container .skill--item , .hobbies-container .hobbie--item{
+    display: inline-block;
+    width: 156px;
+    height: 118px;
+    padding: 16px;
+    margin: 16px 8px;
+    background-color: #FFF;
+    border-radius: 10px;
+}
+
+.skills-container .skill--item div , .hobbies-container .hobbie--item div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.skills-container .skill--item div img , .hobbies-container .hobbie--item div img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+}
+
+.skills-container .skill--item div h5 , .hobbies-container .hobbie--item div h5{
+    font-weight: bold;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+}
+
+.formacion, .experiencia{
+    text-align: center;
+}
+
+.formacion h3, .experiencia h3 {
+    font-weight: bold;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    text-align: center;   
+    margin: 32px 0;
+}
+
+.formacion--item, .experiencia--item{
+    display: inline-block;
+    width: 286px;
+    margin: 16px;
+}
+
+.formacion--item div {
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.formacion--item-imagen{
+    width: 286px;
+    height: 118px;
+    background-color: white;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.formacion--item-imagen a, .formacion--item-imagen a img {
+    height: 80px;
+    margin: 0 auto;
+}
+
+.formacion--item h4, .experiencia--item h4{
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin: 8px 0;
+    text-align: left;
+}
+
+.formacion--item p, .experiencia--item p {
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    text-align: left;
+}
+
+.experiencia--item div {
+    width: 286px;
+    display: inline-block;
+}
+
+.experiencia--item-imagen{
+    width: 286px;
+}
+
+.experiencia--item-imagen img {
+    width: 100%;
+}
+
+.experiencia--item-buttons {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.experiencia--item-repositorio {
+    padding: 12px 16px;
+    margin: 8px 16px 0 0;
+    border: 1px solid #2A7AE4;
+    background-color: #E5E5E5;
+}
+
+.experiencia--item-demostrativo {
+    padding: 12px 16px;
+    background-color: #2A7AE4;
+    border: none;
+}
+
+.experiencia--item-repositorio a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: #2A7AE4;
+}
+
+.experiencia--item-demostrativo a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    color: white;
+}
+
+.contacto h3 {
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.6rem;
+    margin: 32px 32px 8px 32px;
+}
+
+.contacto p {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    margin: 8px 32px 32px 32px;
+}
+
+.contacto--form{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contacto--form-campo{ 
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    border: none;
+    margin: 32px auto;
+    padding: 28px 0 8px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 4px;
+    border-bottom: 1px solid #464646;
+}
+
+.contacto--form-campo p{
+    position: absolute;
+    align-self: center;
+    margin-top: 16px;
+    margin-left: 0;
+}
+
+.contacto--form-campo input, .contacto--form-textarea textarea {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+}
+
+.contacto--form-textarea{
+    width: 100%;
+    height: 133px;
+    background-color: white;
+    border: none;
+    margin: 32px auto;
+    padding: 28px 0 0 12px;
+    display: flex;
+    justify-content: flex-start;
+    border-radius: 4px;
+    border-bottom: 1px solid #464646;
+}
+
+.contacto--form-textarea p{
+    position: absolute;
+    margin-top: 0;
+    margin-left: 0;
+}
+
+.contacto--form-submit {
+    width: 133px;
+    height: 40px;
+    background-color: #2A7AE4;
+    color: white;
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-bottom: 32px;
+}
+
+footer{
+    background-color: white;
+    height: auto;
+    padding: 32px;
+}
+
+footer h3, footer p{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 2rem;
+}
