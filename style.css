@@ -314,6 +314,7 @@ header .header-presentation .referencias-redes--red .flecha {
 
 .contacto--form{
     width: 90%;
+    max-width: 800px;
     margin: 0 auto;
 }
 
