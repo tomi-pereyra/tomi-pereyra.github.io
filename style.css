@@ -342,11 +342,20 @@ header .header-presentation .referencias-redes--red .flecha {
     margin-left: 0;
 }
 
+.contacto--form .contacto--form-campo .f1 {
+    font-size: 1.2rem;
+}
+
+.contacto--form .contacto--form-textarea .f1 {
+    font-size: 1.2rem;
+}
+
 .contacto--form-campo input, .contacto--form-textarea textarea {
     width: 100%;
     height: 100%;
     border: none;
     outline: none;
+    font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1.8rem;
     line-height: 2rem;

@@ -185,21 +185,21 @@
             <h3>Contacto</h3>
             <p>¿Quieres contactarme? Complete el siguiente formulario  y me pondré en contacto con usted lo antes posible.</p>
             <form class="contacto--form" action="">
-                <fieldset class="contacto--form-campo">
-                    <p>Nombre</p>
-                    <input type="name" required maxlength="50">
+                <fieldset class="contacto--form-campo" id="form--name">
+                    <p id="form--name-p">Nombre</p>
+                    <input id="form--name-input" type="name" required maxlength="50">
                 </fieldset>
-                <fieldset class="contacto--form-campo">
-                    <p>E-mail</p>
-                    <input type="email" required maxlength="30">
+                <fieldset class="contacto--form-campo" id="form--email">
+                    <p id="form--email-p">E-mail</p>
+                    <input id="form--email-input" type="email" required maxlength="30">
                 </fieldset>
-                <fieldset class="contacto--form-campo">
-                    <p>Asunto</p>
-                    <input type="text" required maxlength="40">
+                <fieldset class="contacto--form-campo" id="form--text">
+                    <p id="form--text-p">Asunto</p>
+                    <input id="form--text-input" type="text" required maxlength="40">
                 </fieldset>
-                <fieldset class="contacto--form-textarea">
-                    <p>Mensaje</p>
-                    <textarea name="" class="" maxlength="5000"></textarea>
+                <fieldset class="contacto--form-textarea" id="form--mensaje">
+                    <p id="form--mensaje-p">Mensaje</p>
+                    <textarea id="form--mensaje-input" name="" class="" maxlength="5000"></textarea>
                 </fieldset>
                 <button class="contacto--form-submit" type="submit">Enviar Mensaje</button>
             </form>
@@ -209,5 +209,7 @@
         <h3>Desarrollado por Tomás Pereyra</h3>
         <p>2022</p>
     </footer>
+
+    <script src="./index.js"></script>
 </body>
 </html>
