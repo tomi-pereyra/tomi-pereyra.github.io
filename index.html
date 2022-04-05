@@ -8,6 +8,7 @@
     <meta name="robots" content="index,follow">
     <title>Portafolio de Tomás Pereyra</title>
     <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/686/686104.png">
+    <!-- CSS only -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Quicksand:wght@300;500;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -187,19 +188,23 @@
             <form class="contacto--form" action="">
                 <fieldset class="contacto--form-campo" id="form--name">
                     <p id="form--name-p">Nombre</p>
-                    <input id="form--name-input" type="name" required maxlength="50">
+                    <input class="input" id="form--name-input" type="name" required minlength="4" maxlength="50">
+                    <p class="campo-invalido">Este campo no es válido</p>
                 </fieldset>
                 <fieldset class="contacto--form-campo" id="form--email">
                     <p id="form--email-p">E-mail</p>
-                    <input id="form--email-input" type="email" required maxlength="30">
+                    <input class="input" id="form--email-input" type="email" required minlength="10" maxlength="30">
+                    <p class="campo-invalido">Este campo no es válido</p>
                 </fieldset>
                 <fieldset class="contacto--form-campo" id="form--text">
                     <p id="form--text-p">Asunto</p>
-                    <input id="form--text-input" type="text" required maxlength="40">
+                    <input class="input" id="form--text-input" type="text" required maxlength="40">
+                    <p class="campo-invalido">Este campo no es válido</p>
                 </fieldset>
                 <fieldset class="contacto--form-textarea" id="form--mensaje">
                     <p id="form--mensaje-p">Mensaje</p>
-                    <textarea id="form--mensaje-input" name="" class="" maxlength="5000"></textarea>
+                    <textarea class="input" id="form--mensaje-input" name="" class="" maxlength="5000"></textarea>
+                    <p class="campo-invalido">Este campo no es válido</p>
                 </fieldset>
                 <button class="contacto--form-submit" type="submit">Enviar Mensaje</button>
             </form>
@@ -210,6 +215,6 @@
         <p>2022</p>
     </footer>
 
-    <script src="./index.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

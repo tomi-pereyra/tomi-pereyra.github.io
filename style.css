@@ -419,3 +419,28 @@ footer h3, footer p{
     font-size: 1.8rem;
     line-height: 2rem;
 }
+
+.campo-invalido {
+    display: none;
+    margin: 0;
+    padding: 0;
+}
+
+.input-container--invalid {
+    border: 2px solid red;
+    margin-bottom: 5rem;
+}
+
+.input-container--invalid .campo-invalido {
+    display: inline;
+    position: relative;
+    top: 30%;
+    margin-top: 8rem;
+    /*padding-left: 5rem;*/
+    left: -50%;
+    height: 2rem;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: red;
+}
