@@ -1,36 +1,56 @@
-var campoForm = document.querySelectorAll(".input");
-
-campoForm.forEach(element => {
-    element.addEventListener('DOMFocusIn', (e) => {
-        let pForm = e.path[0].previousElementSibling;
-        if(pForm.id == "form--mensaje-p") {
-            pForm.style.margin = "-20px 0 0 0";
-            pForm.style.color = "#7f8792";   
-            pForm.classList.add('f1');
-        }
-        else {
-            pForm.style.margin = "0 0 40px 0";
-            pForm.style.color = "#7f8792";   
-            pForm.classList.add('f1');
-        }
+// Función para iniciar sesión
+async function login() {
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+  
+    // Realiza una solicitud POST al endpoint de inicio de sesión del backend
+    const response = await fetch('/api/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ username, password })
     });
-    element.addEventListener('DOMFocusOut', (e) => {
-        let pForm = e.path[0].previousElementSibling;
-        let inputForm = e.path[0].value;
-        if(!inputForm) {
-            pForm.style.margin = "0 0 18px 0";
-            pForm.style.color = "#464646";
-            pForm.classList.remove('f1');
-        }
+  
+    if (response.ok) {
+      const data = await response.json();
+      const token = data.token;
+  
+      // Guarda el token en el almacenamiento local (puedes cambiarlo a tu preferencia)
+      localStorage.setItem('token', token);
+  
+      // Redirige a la página de perfil
+      window.location.href = '/profile.html';
+    } else {
+      const error = await response.json();
+      console.error(error);
+      // Muestra un mensaje de error en la interfaz de usuario
+    }
+  }
+  
+  // Función para modificar el perfil
+  async function updateProfile() {
+    const token = localStorage.getItem('token');
+    const newProfileData = {
+      // Aquí puedes obtener los datos actualizados del perfil desde el formulario
+    };
+  
+    // Realiza una solicitud PUT al endpoint de modificación de perfil del backend
+    const response = await fetch('/api/profile', {
+      method: 'PUT',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': token
+      },
+      body: JSON.stringify(newProfileData)
     });
-
-    element.addEventListener("blur", (input) => {
-        let error = input.target;
-        console.log(error.parentElement);
-        if(error.validity.valid) {
-            error.parentElement.classList.remove("input-container--invalid");
-        } else {
-            error.parentElement.classList.add("input-container--invalid");
-        }
-    });
-});
+  
+    if (response.ok) {
+      // Muestra un mensaje de éxito en la interfaz de usuario
+    } else {
+      const error = await response.json();
+      console.error(error);
+      // Muestra un mensaje de error en la interfaz de usuario
+    }
+  }
+  
