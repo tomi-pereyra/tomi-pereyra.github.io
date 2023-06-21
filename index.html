@@ -1,220 +1,76 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portafolio de Tomás Emmanuel Pereyra. Incluye habilidades, hobbies, formación académica, experiencia en desarrollo web y formulario de contacto.">
-    <meta name="robots" content="index,follow">
-    <title>Portafolio de Tomás Pereyra</title>
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/686/686104.png">
-    <!-- CSS only -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Quicksand:wght@300;500;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tu Portafolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <hgroup class="header-start">
-            <h3>Tomás Pereyra</h3>
-            <span>tpgstdf@gmail.com</span>
-        </hgroup>
-        <div>
+  <header>
+    <!-- Encabezado del portafolio -->
+        <h1>Tomas Emmanuel Pereyra</h1>
+        <p>Desarrollador Web</p>
+        <ul>
+        <li><a href="https://github.com/tomasemmanuelpereyra">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/tomasemmanuelpereyra/">LinkedIn</a></li>
+        </ul>
+    <nav>
+      <!-- Barra de navegación -->
+    </nav>
+  </header>
+  
+  <main>
+    <!-- Contenido principal -->
+    <section id="about">
+      <!-- Sección "Acerca de mí" -->
+        <h2>Acerca de mí</h2>
+        <img src="profile-picture.jpg" alt="Foto de perfil">
+        <p>Soy un desarrollador web apasionado por el prompt engineering. Tengo experiencia en el desarrollo de aplicaciones web utilizando HTML, CSS y JavaScript. Mi objetivo es crear soluciones eficientes y elegantes que brinden una gran experiencia al usuario.</p>
         
-        </div>
-        <div class="header-presentation">
-            <h1>Hola, mi nombre es Tomás Pereyra. Desarrollador Web Front-End Jr.</h1>
-            <p>Actualmente estudio Desarrollo Web Full Stack en Alura LATAM como parte del programa ONE (Oracle Next Education). Hasta ahora he desarrollado algunos proyectos entre los que se encuentra este portafolio.</p>
-            <ul class="referencias-redes">
-                <li class="referencias-redes--red"><a href="https://github.com/tomi-pereyra" target="_blank">GitHub <span class="flecha"><img src="./icons/flecha-enlace.svg" alt="flecha"></span></a></li>
-                <li class="referencias-redes--red"><a href="https://www.linkedin.com/in/eltoki/" target="_blank">Linkedin <span class="flecha"><img src="./icons/flecha-enlace.svg" alt="flecha"></span></a></li>
-                <li class="referencias-redes--red"><a href="https://twitter.com/tomytibi" target="_blank">Twitter <span class="flecha"><img src="./icons/flecha-enlace.svg" alt="flecha"></span></a></li>
-                <li class="referencias-redes--red"><a href="https://download936.mediafire.com/wrp23nbq11gg/m7rgy3fwyf63pp7/Profile.pdf" target="_blank">PDF <span class="flecha"><img src="./icons/flecha-enlace.svg" alt="flecha"></span></a></li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <section class="sobremi">
-            <h2>Tomás Pereyra - Desarrollador Web Front-End Junior</h2>
-            <p>Mi nombre es Tomás Emmanuel Pereyra, vivo en Argentina, tengo 19 años. Estoy buscando la oportunidad de trabajar como Desarrollador Web Full Stack Junior.</p>
-            <p>Empecé a estudiar programación en el 2019 al terminar la Escuela Secundaria y desde entonces no tuve una oportunidad tan buena como la que me da el programa ONE. Desde que empecé este programa estuve dedicando mucho más tiempo a aprender desarrollo web y desarrollar proyectos.</p>
-            <p>El programa ONE no es el único medio de capacitación que utilizo. Hace un tiempo logré empezar a estudiar en Platzi y eso me abrió una puerta mucho más grande. Aprender Inglés, Desarrollo Web y Cloud Computing son solo algunas de las tantas capacitaciones que tengo disponibles y espero mejorar continuamente, no solo en la programación, sino también en mis habilidades blandas.</p>
-        </section>
-        <section class="skills-container">
-            <h3>Skills</h3>
-            <div class="skill--item">
-                <div>
-                    <img src="./images/html5.png" alt="html 5">
-                    <h5>Html 5</h5>
-                </div>
-            </div>
-            <div class="skill--item">
-                <div>
-                    <img src="./images/css3.png" alt="css">
-                    <h5>CSS</h5>
-                </div>
-            </div>
-            <div class="skill--item">
-                <div>
-                    <img src="./images/javascript-logo.png" alt="javascript">
-                    <h5>Javascript</h5>
-                </div>
-            </div>
-        </section>
-        <section class="hobbies-container">
-            <h3>Hobbies</h3>
-            <div class="hobbie--item">
-                <div>
-                    <img src="./icons/person-skiing-solid.svg" alt="esquí">
-                    <h5>Esquí Alpino</h5>
-                </div>
-            </div>
-            <div class="hobbie--item">
-                <div>
-                    <img src="./images/cuaderno.png" alt="encuadernación">
-                    <h5>Encuadernación</h5>
-                </div>
-            </div>
-            <div class="hobbie--item">
-                <div>
-                    <img src="./images/drone.png" alt="drone">
-                    <h5>Piloto de Drone</h5>
-                </div>
-            </div>
-        </section>
-        <section class="formacion">
-            <h3>Formación Académica</h3>
-            <div class="formacion--item">
-                <div>
-                    <figure class="formacion--item-imagen">
-                        <a href="https://app.aluracursos.com/user/eltoki" target="_blank"><img src="./images/alura.png" alt="logo de Alura"></a>
-                    </figure>
-                    <h4>Web Developer</h4>
-                    <p>Desde 2022 - Alura - Oracle Next Education</p>
-                </div>
-            </div>
-            <div class="formacion--item">
-                <div>
-                    <figure class="formacion--item-imagen">
-                        <a href="https://platzi.com/web/" target="_blank"><img src="./images/web-platzi.png" alt="logo de escuela de desarrollo web de Platzi"></a>
-                    </figure>
-                    <h4>Full Stack Web Developer</h4>
-                    <p>Desde 2021 - Platzi</p>
-                </div>
-            </div>
-            <div class="formacion--item">
-                <div>
-                    <figure class="formacion--item-imagen">
-                        <a href="https://platzi.com/software/" target="_blank"><img src="./images/programacion-platzi.png" alt="logo de escuela de programación y desarrollo de software de Platzi"></a>
-                    </figure>
-                    <h4>Programación y Desarrollo de Software</h4>
-                    <p>Desde 2021 - Platzi</p>
-                </div>
-            </div>
-            <div class="formacion--item">
-                <div>
-                    <figure class="formacion--item-imagen">
-                        <a href="https://platzi.com/escuela-javascript/" target="_blank"><img src="./images/javascript-platzi.png" alt="logo de escuela de JavaScript de Platzi"></a>
-                    </figure>
-                    <h4>Programación con JavaScript</h4>
-                    <p>Desde 2021 - Platzi</p>
-                </div>
-            </div>
-            <div class="formacion--item">
-                <div>
-                    <figure class="formacion--item-imagen">
-                        <a href="https://platzi.com/matematicas/" target="_blank"><img src="./images/mates-platzi.png" alt="logo de escuela de Matematicas de Platzi"></a>
-                    </figure>
-                    <h4>Matemática - Algebra - Cálculo - Estadística</h4>
-                    <p>Desde 2021 - Platzi</p>
-                </div>
-            </div>
-            <div class="formacion--item">
-                <div>
-                    <figure class="formacion--item-imagen">
-                        <a href="https://platzi.com/azure/" target="_blank"><img src="./images/cloud-platzi.png" alt="logo de escuela de Cloud Computing con Azure de Platzi"></a>
-                    </figure>
-                    <h4>Cloud Computing con Azure</h4>
-                    <p>Desde 2021 - Platzi</p>
-                </div>
-            </div>
-            <div class="formacion--item">
-                <div>
-                    <figure class="formacion--item-imagen">
-                        <a href="https://platzi.com/idioma-ingles/" target="_blank"><img src="./images/ingles-platzi.png" alt="logo de escuela de Inglés de Platzi"></a>
-                    </figure>
-                    <h4>Inglés</h4>
-                    <p>Desde 2021 - Platzi</p>
-                </div>
-            </div>
-        </section>
-        <section class="experiencia">
-            <h3>Experiencia Profesional</h3>
-            <div class="experiencia--item">
-                <div>
-                    <figure class="experiencia--item-imagen">
-                        <img src="https://i.ibb.co/pxWvp07/encriptador.png" alt="encriptador">
-                    </figure>
-                    <h4>Encriptador creado con HTML, CSS y JavaScript</h4>
-                    <p>Challenge Oracle</p>
-                    <div class="experiencia--item-buttons">
-                        <div>
-                            <button class="experiencia--item-repositorio"><a href="https://github.com/tomi-pereyra/text-encryptor" target="_blank">Repositorio</a></button>
-                            <button class="experiencia--item-demostrativo"><a href="https://tomi-pereyra.github.io/text-encryptor/" target="_blank">Ver Demo</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="experiencia--item">
-                <div>
-                    <figure class="experiencia--item-imagen">
-                        <img src="https://i.ibb.co/W6cSdMx/ahorcado.png" alt="ahorcado">
-                    </figure>
-                    <h4>Juego creado con HTML, CSS y JavaScript</h4>
-                    <p>Challenge Oracle</p>
-                    <div class="experiencia--item-buttons">
-                        <div>
-                            <button class="experiencia--item-repositorio"><a href="https://github.com/tomi-pereyra/hanged-game" target="_blank">Repositorio</a></button>
-                            <button class="experiencia--item-demostrativo"><a href="https://tomi-pereyra.github.io/hanged-game/" target="_blank">Ver Demo</a></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="contacto">
-            <h3>Contacto</h3>
-            <p>¿Quieres contactarme? Complete el siguiente formulario  y me pondré en contacto con usted lo antes posible.</p>
-            <form class="contacto--form" action="">
-                <fieldset class="contacto--form-campo" id="form--name">
-                    <p id="form--name-p">Nombre</p>
-                    <input class="input" id="form--name-input" type="name" required minlength="4" maxlength="50">
-                    <p class="campo-invalido">Este campo no es válido</p>
-                </fieldset>
-                <fieldset class="contacto--form-campo" id="form--email">
-                    <p id="form--email-p">E-mail</p>
-                    <input class="input" id="form--email-input" type="email" required minlength="10" maxlength="30">
-                    <p class="campo-invalido">Este campo no es válido</p>
-                </fieldset>
-                <fieldset class="contacto--form-campo" id="form--text">
-                    <p id="form--text-p">Asunto</p>
-                    <input class="input" id="form--text-input" type="text" required maxlength="40">
-                    <p class="campo-invalido">Este campo no es válido</p>
-                </fieldset>
-                <fieldset class="contacto--form-textarea" id="form--mensaje">
-                    <p id="form--mensaje-p">Mensaje</p>
-                    <textarea class="input" id="form--mensaje-input" name="" class="" maxlength="5000"></textarea>
-                    <p class="campo-invalido">Este campo no es válido</p>
-                </fieldset>
-                <button class="contacto--form-submit" type="submit">Enviar Mensaje</button>
-            </form>
-        </section>
-    </main>
-    <footer>
-        <h3>Desarrollado por Tomás Pereyra</h3>
-        <p>2022</p>
-    </footer>
+        <h3>Habilidades</h3>
+        <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Node.js</li>
+        <li>Git</li>
+        </ul>
+    </section>
+    
+    <!-- Sección de proyectos -->
+    <section id="projects">
+        <h2>Proyectos</h2>
+        
+        <article>
+        <h3>Proyecto 1</h3>
+        <p>Descripción del proyecto 1.</p>
+        <ul>
+            <li>Tecnología 1</li>
+            <li>Tecnología 2</li>
+        </ul>
+        <a href="#">Ver proyecto</a>
+        </article>
+        
+        <article>
+        <h3>Proyecto 2</h3>
+        <p>Descripción del proyecto 2.</p>
+        <ul>
+            <li>Tecnología 1</li>
+            <li>Tecnología 2</li>
+        </ul>
+        <a href="#">Ver proyecto</a>
+        </article>
+    </section>
+  
+  </main>
+  
+  <footer>
+    <!-- Pie de página -->
+  </footer>
 
-    <script src="app.js"></script>
+  <!-- Scripts de JavaScript -->
+  <script src="main.js"></script>
 </body>
 </html>
