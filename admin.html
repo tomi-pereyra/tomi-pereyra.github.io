@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Contenido</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><a href="login.html">Cerrar sesión</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="editar">
+      <h2>Editar Contenido</h2>
+      <form id="editForm">
+        <label for="perfilDesc">Descripción del Perfil:</label>
+        <textarea id="perfilDesc"></textarea>
+        <label for="proyecto1">Proyecto 1:</label>
+        <input type="text" id="proyecto1">
+        <label for="proyecto1Desc">Descripción del Proyecto 1:</label>
+        <textarea id="proyecto1Desc"></textarea>
+        <label for="proyecto2">Proyecto 2:</label>
+        <input type="text" id="proyecto2">
+        <label for="proyecto2Desc">Descripción del Proyecto 2:</label>
+        <textarea id="proyecto2Desc"></textarea>
+        <button type="submit">Guardar</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
