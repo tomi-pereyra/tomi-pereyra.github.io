@@ -47,25 +47,6 @@ img {
   margin-bottom: 10px;
 }
 
-form label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-form input, form textarea {
-  width: 100%;
-  padding: 5px;
-  margin-bottom: 10px;
-}
-
-button[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  padding: 5px 10px;
-  border: none;
-  cursor: pointer;
-}
-
 footer {
   background-color: #f9f9f9;
   padding: 10px;
