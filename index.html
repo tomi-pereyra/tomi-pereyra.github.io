@@ -8,73 +8,67 @@
 </head>
 <body>
   <header>
-    <!-- Encabezado del portafolio -->
-        <h1>Tomas Emmanuel Pereyra</h1>
-        <p>Desarrollador Web</p>
-        <ul>
-        <li><a href="https://github.com/tomasemmanuelpereyra">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/tomasemmanuelpereyra/">LinkedIn</a></li>
-        </ul>
     <nav>
-      <!-- Barra de navegación -->
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#perfil">Perfil</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
     </nav>
   </header>
-  
-  <main>
-    <!-- Contenido principal -->
-    <!-- Sección "Acerca de mí" -->
-    <section id="about">
-        <h2>Acerca de mí</h2>
-        <img src="profile-picture.jpg" alt="Foto de perfil">
-        <p>Soy un desarrollador web apasionado por el prompt engineering. Tengo experiencia en el desarrollo de aplicaciones web utilizando HTML, CSS y JavaScript. Mi objetivo es crear soluciones eficientes y elegantes que brinden una gran experiencia al usuario.</p>
-        
-        <h3>Habilidades</h3>
-        <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>React.js</li>
-        <li>Node.js</li>
-        <li>Git</li>
-        </ul>
-    
-        <h3>Iniciar sesión</h3>
-        <form id="login-form">
-    </section>
-  
-    
-    <!-- Sección de proyectos -->
-    <section id="projects">
-        <h2>Proyectos</h2>
-        
-        <article>
-        <h3>Proyecto 1</h3>
-        <p>Descripción del proyecto 1.</p>
-        <ul>
-            <li>Tecnología 1</li>
-            <li>Tecnología 2</li>
-        </ul>
-        <a href="#">Ver proyecto</a>
-        </article>
-        
-        <article>
-        <h3>Proyecto 2</h3>
-        <p>Descripción del proyecto 2.</p>
-        <ul>
-            <li>Tecnología 1</li>
-            <li>Tecnología 2</li>
-        </ul>
-        <a href="#">Ver proyecto</a>
-        </article>
-    </section>
-  
-  </main>
-  
-  <footer>
-    <!-- Pie de página -->
-  </footer>
 
-  <!-- Scripts de JavaScript -->
-  <script src="main.js"></script>
+  <main>
+    <section id="inicio">
+      <h1>Bienvenido a mi Portafolio</h1>
+      <p>¡Hola! Soy Tomás Emmanuel Pereyra, un desarrollador web con experiencia en prompt engineering. Explora mis proyectos y conoce más sobre mí.</p>
+    </section>
+
+    <section id="perfil">
+      <h2>Perfil</h2>
+      <div>
+        <img src="ruta/a/tu/foto.png" alt="Foto de Perfil">
+        <p>Aquí puedes agregar una breve descripción sobre ti y tus habilidades como desarrollador web.</p>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <h2>Proyectos</h2>
+      <div>
+        <h3>Nombre del Proyecto 1</h3>
+        <p>Descripción breve del proyecto.</p>
+        <p>Tecnologías utilizadas: HTML, CSS, JavaScript.</p>
+        <a href="#">Enlace al proyecto</a>
+      </div>
+      <div>
+        <h3>Nombre del Proyecto 2</h3>
+        <p>Descripción breve del proyecto.</p>
+        <p>Tecnologías utilizadas: HTML, CSS, JavaScript.</p>
+        <a href="#">Enlace al proyecto</a>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>Puedes comunicarte conmigo a través de los siguientes medios:</p>
+      <ul>
+        <li>WhatsApp: <a href="https://wa.me/tunumero">Tu número de WhatsApp</a></li>
+        <li>Correo electrónico: <a href="mailto:tucorreo@dominio.com">tucorreo@dominio.com</a></li>
+      </ul>
+      <form action="enviar.php" method="POST">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Tomás Emmanuel Pereyra | Desarrollador Web</p>
+  </footer>
 </body>
 </html>
